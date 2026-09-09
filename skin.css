@@ -1,0 +1,1313 @@
+/* =========================================================
+   SKIN PROJECT
+   Only affects skin.html
+========================================================= */
+
+.skin-project {
+
+    --skin-sage: #a8b39f;
+    --skin-dark-sage: #596554;
+    --skin-cream: #f4f0e7;
+    --skin-beige: #d8cdbb;
+
+    /*
+        Different font personality for SKIN.
+        Your portfolio's main font remains untouched.
+    */
+    --skin-display: "DM Serif Display", serif;
+}
+
+
+
+/* =========================================================
+   TOP LINE
+========================================================= */
+
+.skin-project .skin-top-line {
+
+    display: center;
+
+    justify-content: space-between;
+
+    padding: 25px 0;
+
+    border-top: 1px solid rgba(255,255,255,.12);
+    border-bottom: 1px solid rgba(255,255,255,.12);
+
+    font-size: 10px;
+
+    letter-spacing: .16em;
+
+    opacity: .55;
+}
+
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.skin-project .skin-hero {
+
+    padding: 50px 0 120px;
+
+    overflow: hidden;
+}
+
+
+.skin-project .skin-hero-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+    min-height: 650px;
+}
+
+
+.skin-project .skin-mini-title {
+
+    font-size: 10px;
+
+    letter-spacing: .2em;
+
+    color: var(--skin-sage);
+
+    margin-bottom: 25px;
+}
+
+
+
+/* =========================================================
+   DIFFERENT FONT
+========================================================= */
+
+.skin-project .skin-title {
+
+    font-family: var(--skin-display);
+
+    font-size: clamp(70px, 8vw, 130px);
+
+    line-height: .82;
+
+    font-weight: 400;
+
+    max-width: 650px;
+
+    margin: 0 0 35px;
+
+    letter-spacing: -.04em;
+}
+
+
+.skin-project .skin-title em {
+
+    display: block;
+
+    color: var(--skin-sage);
+
+    font-style: italic;
+
+    font-weight: 400;
+}
+
+
+.skin-project .skin-description {
+
+    max-width: 450px;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    opacity: .65;
+
+    margin-bottom: 40px;
+}
+
+
+
+/* =========================================================
+   CIRCLE BUTTON
+========================================================= */
+
+.skin-project .skin-circle-button {
+
+    width: 105px;
+
+    height: 105px;
+
+    border: 1px solid rgba(255,255,255,.25);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 7px;
+
+    text-decoration: none;
+
+    color: inherit;
+
+    font-size: 9px;
+
+    letter-spacing: .1em;
+
+    transition: .4s ease;
+}
+
+
+.skin-project .skin-circle-button strong {
+
+    font-size: 20px;
+
+    font-weight: 400;
+}
+
+
+.skin-project .skin-circle-button:hover {
+
+    background: var(--skin-sage);
+
+    color: #111;
+
+    border-color: var(--skin-sage);
+
+    transform: rotate(-8deg);
+}
+
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.skin-project .skin-hero-visual {
+
+    position: relative;
+}
+
+
+.skin-project .skin-image-wrap {
+
+    position: relative;
+
+    overflow: hidden;
+
+    z-index: 2;
+}
+
+
+.skin-project .skin-image-wrap img {
+
+    display: block;
+
+    width: 100%;
+
+    transition: transform .8s ease;
+}
+
+
+.skin-project .skin-image-wrap:hover img {
+
+    transform: scale(1.035);
+}
+
+
+
+/* =========================================================
+   DECORATIVE CIRCLE
+========================================================= */
+
+.skin-project .skin-circle {
+
+    position: absolute;
+
+    width: 260px;
+
+    height: 260px;
+
+    border: 1px solid rgba(168,179,159,.4);
+
+    border-radius: 50%;
+
+    top: -70px;
+
+    right: -70px;
+
+    z-index: 1;
+
+    animation: skinFloat 6s ease-in-out infinite;
+}
+
+
+.skin-project .skin-circle::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 8px;
+
+    height: 8px;
+
+    background: var(--skin-sage);
+
+    border-radius: 50%;
+
+    top: 25px;
+
+    left: 50%;
+
+}
+
+
+@keyframes skinFloat {
+
+    0%,100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(15px) rotate(8deg);
+    }
+}
+
+
+.skin-project .skin-image-label {
+
+    position: absolute;
+
+    right: 0;
+
+    bottom: -30px;
+
+    font-size: 9px;
+
+    letter-spacing: .18em;
+
+    color: var(--skin-sage);
+}
+
+
+
+/* =========================================================
+   SECTION NUMBER
+========================================================= */
+
+.skin-project .skin-section-number {
+
+    font-size: 10px;
+
+    letter-spacing: .18em;
+
+    opacity: .45;
+
+    margin-bottom: 55px;
+}
+
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.skin-project .skin-intro {
+
+    padding: 130px 0;
+}
+
+
+.skin-project .skin-intro-grid {
+
+    display: grid;
+
+    grid-template-columns: 1.1fr .9fr;
+
+    gap: 100px;
+}
+
+
+.skin-project .skin-intro h2 {
+
+    font-family: var(--skin-display);
+
+    font-weight: 400;
+
+    font-size: clamp(50px, 6vw, 90px);
+
+    line-height: .9;
+
+    margin: 0;
+}
+
+
+.skin-project .skin-intro h2 em {
+
+    color: var(--skin-sage);
+
+    font-style: italic;
+}
+
+
+.skin-project .skin-intro-text {
+
+    max-width: 500px;
+
+    padding-top: 15px;
+}
+
+
+.skin-project .skin-intro-text p {
+
+    line-height: 1.9;
+
+    opacity: .65;
+
+    margin-bottom: 25px;
+}
+
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.skin-project .skin-brand {
+
+    padding: 130px 0;
+
+    background: rgba(168,179,159,.045);
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+
+.skin-project .skin-brand-grid {
+
+    display: grid;
+
+    grid-template-columns: 1.1fr .9fr;
+
+    gap: 90px;
+
+    align-items: center;
+}
+
+
+.skin-project .skin-brand-image {
+
+    overflow: hidden;
+}
+
+
+.skin-project .skin-brand-image img {
+
+    width: 100%;
+
+    display: block;
+}
+
+
+.skin-project .skin-brand-copy h2 {
+
+    font-family: var(--skin-display);
+
+    font-size: clamp(55px, 6vw, 90px);
+
+    line-height: .85;
+
+    font-weight: 400;
+
+    margin: 25px 0 35px;
+}
+
+
+.skin-project .skin-brand-copy h2 em {
+
+    color: var(--skin-sage);
+
+    font-style: italic;
+}
+
+
+.skin-project .skin-brand-copy p {
+
+    max-width: 420px;
+
+    line-height: 1.8;
+
+    opacity: .6;
+}
+
+
+.skin-project .skin-small-label {
+
+    font-size: 9px;
+
+    letter-spacing: .2em;
+
+    color: var(--skin-sage);
+}
+
+
+.skin-project .skin-line {
+
+    width: 100%;
+
+    height: 1px;
+
+    background: rgba(255,255,255,.15);
+
+    margin: 45px 0 20px;
+}
+
+
+.skin-project .skin-coordinate {
+
+    font-size: 9px;
+
+    letter-spacing: .15em;
+
+    opacity: .4;
+}
+
+
+
+/* =========================================================
+   GALLERY
+========================================================= */
+
+.skin-project .skin-two-images {
+
+    display: grid;
+
+    grid-template-columns: 1.5fr .5fr;
+
+    gap: 30px;
+
+    align-items: end;
+}
+
+
+.skin-project .skin-two-images img {
+
+    width: 100%;
+
+    display: block;
+}
+
+
+.skin-project .skin-gallery-note {
+
+    padding-bottom: 20px;
+}
+
+
+.skin-project .skin-gallery-note span {
+
+    font-size: 9px;
+
+    letter-spacing: .15em;
+
+    color: var(--skin-sage);
+}
+
+
+.skin-project .skin-gallery-note p {
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    opacity: .55;
+
+    margin-top: 20px;
+}
+
+
+
+/* =========================================================
+   COLOUR
+========================================================= */
+
+.skin-project .skin-colour-section {
+
+    padding: 130px 0;
+}
+
+
+.skin-project .skin-colour-header {
+
+    margin-bottom: 60px;
+}
+
+
+.skin-project .skin-colour-header h2 {
+
+    font-family: var(--skin-display);
+
+    font-size: clamp(55px, 7vw, 100px);
+
+    line-height: .85;
+
+    font-weight: 400;
+
+    margin: 0;
+}
+
+
+.skin-project .skin-colour-header em {
+
+    color: var(--skin-sage);
+
+    font-style: italic;
+}
+
+
+.skin-project .skin-colours {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 0;
+}
+
+
+.skin-project .skin-colour {
+
+    min-height: 300px;
+
+    padding: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+
+.skin-project .skin-colour span {
+
+    font-size: 9px;
+
+    opacity: .55;
+}
+
+
+.skin-project .skin-colour strong {
+
+    font-size: 11px;
+
+    letter-spacing: .1em;
+}
+
+
+.skin-project .skin-colour small {
+
+    font-size: 9px;
+
+    opacity: .6;
+}
+
+
+.skin-project .colour-sage {
+
+    background: #a8b39f;
+
+    color: #20231f;
+}
+
+
+.skin-project .colour-deep {
+
+    background: #596554;
+
+    color: white;
+}
+
+
+.skin-project .colour-cream {
+
+    background: #f4f0e7;
+
+    color: #20231f;
+}
+
+
+.skin-project .colour-beige {
+
+    background: #d8cdbb;
+
+    color: #20231f;
+}
+
+
+
+/* =========================================================
+   PRODUCTS
+========================================================= */
+
+.skin-project .skin-products {
+
+    padding: 130px 0;
+}
+
+
+.skin-project .skin-product-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    gap: 50px;
+
+    margin-bottom: 60px;
+}
+
+
+.skin-project .skin-product-heading h2 {
+
+    font-family: var(--skin-display);
+
+    font-size: clamp(55px, 6vw, 90px);
+
+    font-weight: 400;
+
+    margin: 20px 0 0;
+}
+
+
+.skin-project .skin-product-heading p {
+
+    max-width: 350px;
+
+    line-height: 1.7;
+
+    opacity: .55;
+}
+
+
+.skin-project .skin-product-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.skin-project .skin-product-image {
+
+    position: relative;
+
+    background: var(--skin-cream);
+
+    overflow: hidden;
+}
+
+
+.skin-project .skin-product-image img {
+
+    width: 100%;
+
+    display: block;
+
+    transition: transform .7s ease;
+}
+
+
+.skin-project .skin-product:hover img {
+
+    transform: scale(1.04);
+}
+
+
+.skin-project .skin-product-image span {
+
+    position: absolute;
+
+    top: 15px;
+
+    left: 15px;
+
+    width: 30px;
+
+    height: 30px;
+
+    border: 1px solid rgba(0,0,0,.3);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 9px;
+
+    color: #222;
+}
+
+
+.skin-project .skin-product h3 {
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    margin: 18px 0 5px;
+}
+
+
+.skin-project .skin-product p {
+
+    font-size: 12px;
+
+    opacity: .5;
+}
+
+
+
+/* =========================================================
+   PACKAGING
+========================================================= */
+
+.skin-project .skin-packaging {
+
+    padding: 130px 0;
+
+    background: rgba(168,179,159,.035);
+}
+
+
+.skin-project .skin-packaging-grid {
+
+    display: grid;
+
+    grid-template-columns: .8fr 1.2fr;
+
+    gap: 90px;
+
+    align-items: center;
+}
+
+
+.skin-project .skin-packaging-text h2 {
+
+    font-family: var(--skin-display);
+
+    font-size: clamp(60px, 7vw, 100px);
+
+    line-height: .85;
+
+    font-weight: 400;
+
+    margin: 25px 0 35px;
+}
+
+
+.skin-project .skin-packaging-text h2 em {
+
+    display: block;
+
+    color: var(--skin-sage);
+
+    font-style: italic;
+}
+
+
+.skin-project .skin-packaging-text > p {
+
+    max-width: 400px;
+
+    line-height: 1.8;
+
+    opacity: .6;
+}
+
+
+.skin-project .skin-packaging-image img {
+
+    width: 100%;
+
+    display: block;
+}
+
+
+.skin-project .skin-stamp {
+
+    width: 105px;
+
+    height: 105px;
+
+    border: 1px solid var(--skin-sage);
+
+    border-radius: 50%;
+
+    margin-top: 50px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    font-size: 8px;
+
+    line-height: 1.5;
+
+    letter-spacing: .12em;
+
+    color: var(--skin-sage);
+
+    transform: rotate(-12deg);
+}
+
+
+
+/* =========================================================
+   APPLICATIONS
+========================================================= */
+
+.skin-project .skin-applications {
+
+    padding: 130px 0;
+}
+
+
+.skin-project .skin-application-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+
+.skin-project .skin-application-grid img {
+
+    width: 100%;
+
+    display: block;
+}
+
+
+
+/* =========================================================
+   SOCIAL
+========================================================= */
+
+.skin-project .skin-social {
+
+    padding: 130px 0;
+
+    background: var(--skin-cream);
+
+    color: #20231f;
+}
+
+
+.skin-project .skin-social-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    gap: 50px;
+
+    margin-bottom: 60px;
+}
+
+
+.skin-project .skin-social-heading h2 {
+
+    font-family: var(--skin-display);
+
+    font-size: clamp(70px, 9vw, 130px);
+
+    line-height: .8;
+
+    font-weight: 400;
+
+    margin: 0;
+}
+
+
+.skin-project .skin-social-heading h2 em {
+
+    color: var(--skin-dark-sage);
+
+    font-style: italic;
+}
+
+
+.skin-project .skin-social-heading p {
+
+    max-width: 350px;
+
+    line-height: 1.7;
+
+    opacity: .6;
+}
+
+
+.skin-project .skin-social-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+
+.skin-project .skin-social-grid img {
+
+    width: 100%;
+
+    display: block;
+
+    transition: transform .5s ease;
+}
+
+
+.skin-project .skin-social-grid img:hover {
+
+    transform: translateY(-8px);
+}
+
+
+
+/* =========================================================
+   FINAL
+========================================================= */
+
+.skin-project .skin-final {
+
+    padding: 180px 0;
+
+    text-align: center;
+}
+
+
+.skin-project .skin-final-line {
+
+    width: 80px;
+
+    height: 1px;
+
+    background: var(--skin-sage);
+
+    margin: 0 auto 40px;
+}
+
+
+.skin-project .skin-final span {
+
+    font-size: 9px;
+
+    letter-spacing: .2em;
+
+    opacity: .45;
+}
+
+
+.skin-project .skin-final h2 {
+
+    font-family: var(--skin-display);
+
+    font-size: clamp(55px, 8vw, 120px);
+
+    line-height: .85;
+
+    font-weight: 400;
+
+    max-width: 1000px;
+
+    margin: 35px auto;
+}
+
+
+.skin-project .skin-final h2 em {
+
+    display: block;
+
+    color: var(--skin-sage);
+
+    font-style: italic;
+}
+
+
+.skin-project .skin-final p {
+
+    max-width: 450px;
+
+    margin: auto;
+
+    line-height: 1.7;
+
+    opacity: .55;
+}
+
+
+
+/* =========================================================
+   NEXT PROJECT
+========================================================= */
+
+.skin-project .skin-next {
+
+    border-top: 1px solid rgba(255,255,255,.12);
+
+    padding: 35px 0;
+}
+
+
+.skin-project .skin-next .container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.skin-project .skin-next span {
+
+    font-size: 9px;
+
+    letter-spacing: .15em;
+
+    opacity: .4;
+}
+
+
+.skin-project .skin-next a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    letter-spacing: .12em;
+}
+
+/* =========================================================
+   FIX SKIN PORTFOLIO CONTAINER
+   Keeps SKIN aligned with the rest of the portfolio
+========================================================= */
+
+.skin-project .container {
+    width: min(90%, 1280px);
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/* Keep the top project line inside the portfolio width */
+.skin-project .skin-top-line {
+    width: 100%;
+}
+
+
+/* Make every major SKIN section use the same centered width */
+.skin-project .skin-hero > .container,
+.skin-project .skin-intro > .container,
+.skin-project .skin-brand > .container,
+.skin-project .skin-gallery > .container,
+.skin-project .skin-colour-section > .container,
+.skin-project .skin-products > .container,
+.skin-project .skin-packaging > .container,
+.skin-project .skin-applications > .container,
+.skin-project .skin-social > .container,
+.skin-project .skin-final > .container,
+.skin-project .skin-next > .container {
+    width: min(90%, 1280px);
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .skin-project .skin-hero-grid,
+    .skin-project .skin-intro-grid,
+    .skin-project .skin-brand-grid,
+    .skin-project .skin-packaging-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+
+    .skin-project .skin-hero {
+
+        padding-top: 40px;
+    }
+
+
+    .skin-project .skin-hero-grid {
+
+        min-height: auto;
+    }
+
+
+    .skin-project .skin-title {
+
+        font-size: clamp(65px, 17vw, 100px);
+    }
+
+
+    .skin-project .skin-circle {
+
+        width: 170px;
+
+        height: 170px;
+
+        right: -40px;
+
+        top: -40px;
+    }
+
+
+    .skin-project .skin-intro,
+    .skin-project .skin-brand,
+    .skin-project .skin-colour-section,
+    .skin-project .skin-products,
+    .skin-project .skin-packaging,
+    .skin-project .skin-applications,
+    .skin-project .skin-social {
+
+        padding: 90px 0;
+    }
+
+
+    .skin-project .skin-two-images {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .skin-project .skin-colours {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .skin-project .skin-colour {
+
+        min-height: 200px;
+    }
+
+
+    .skin-project .skin-product-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .skin-project .skin-product-heading,
+    .skin-project .skin-social-heading {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .skin-project .skin-application-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .skin-project .skin-social-grid {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .skin-project .skin-final {
+
+        padding: 120px 0;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .skin-project .skin-top-line {
+
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+
+    .skin-project .skin-colours {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .skin-project .skin-social-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .skin-project .skin-next .container {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+}
+@media (max-width: 800px) {
+
+    .skin-project .container {
+        width: calc(100% - 40px);
+        max-width: none;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
